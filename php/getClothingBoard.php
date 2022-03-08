@@ -1,4 +1,4 @@
-<?php include  $_SERVER['DOCUMENT_ROOT']."/DB.php"; ?>
+<?php include  $_SERVER['DOCUMENT_ROOT']."/phpBack/DB.php"; ?>
 
 <?php
  // board테이블에서 idx를 기준으로 내림차순해서 5개까지 표시
