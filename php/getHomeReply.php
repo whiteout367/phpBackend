@@ -3,7 +3,7 @@
 <?php
 $idx=$_GET['idx'];
  // board테이블에서 idx를 기준으로 내림차순해서 5개까지 표시
-   $sql = mq("select * from HomeBoard order by idx desc limit 0,5"); 
+   $sql = mq("select Idx,Id,Content,Date from HomeReply order by idx desc"); 
      while($board = $sql->fetch_array())
      {
        //title변수에 DB에서 가져온 title을 선택
