@@ -1,10 +1,15 @@
 <?php
+error_reporting( E_ALL ); 
+ini_set( "display_errors", 1 ); 
+?>
+<?php
 
 include $_SERVER['DOCUMENT_ROOT']."/phpBack/DB.php";
 
 
 $id= $_POST['id'];
 $userpw = password_hash($_POST['pw'], PASSWORD_DEFAULT);
+
 
 //DB에서 id와 pass를 문자열로 설정하여 ''를 넣어주어야 쿼리 작동
 $sql = "insert into User(Id,Passwd) values('$id','$userpw')";

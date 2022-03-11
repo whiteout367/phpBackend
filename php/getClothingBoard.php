@@ -1,6 +1,7 @@
 <?php include  $_SERVER['DOCUMENT_ROOT']."/phpBack/DB.php"; ?>
 
 <?php
+$idx=$_GET['idx'];
  // board테이블에서 idx를 기준으로 내림차순해서 5개까지 표시
    $sql = mq("select * from ClothingBoard order by idx desc limit 0,5"); 
      while($board = $sql->fetch_array())
